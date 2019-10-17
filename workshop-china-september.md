@@ -1,4 +1,4 @@
-# Parity China Workshop
+# Intro to Substrate / Polkadot Workshop
 
 ## Exercise 1: Deploying a Substrate blockchain to a private network
 
