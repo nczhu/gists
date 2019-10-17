@@ -2,9 +2,9 @@
 
 ## Exercise 1: Deploying a Substrate blockchain to a private network
 
-## Run a substrate tempalte node
+## Run a Substrate template node
 
-#### 1. Install substrate, Build the node binary
+#### 1. Install Substrate, Build the node binary
 
 ```shell
 # Install Rust toolchains
