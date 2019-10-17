@@ -10,7 +10,7 @@
 # Install Rust toolchains
 $ curl https://sh.rustup.rs -sSf | sh -s -- -y && \
 	export PATH="$PATH:$HOME/.cargo/bin"
-# Build the node binrary
+# Build the node binary
 $ git clone -b v1.0 https://github.com/paritytech/substrate
 $ cargo install --force --path subkey subkey
 $ cd node-template && ./scripts/init.sh && ./scripts/build.sh
@@ -32,7 +32,7 @@ $ ./target/release/node-template \
   --name AlicesNode
 ```
 
-#### 3. Joins in as Bob
+#### 3. Join in as Bob
 
 ```shell
 $ ./target/release/node-template \
@@ -46,7 +46,7 @@ $ ./target/release/node-template \
   --bootnodes /ip4/<Alices IP Address>/tcp/<Alices Port>/p2p/<Alices Node ID>
 ```
 
-#### 4. Check the State of your blockchai
+#### 4. Check the state of your blockchain
 
 1. open `https://polkadot.js.org/apps/#/settings`
 2. use custom endpoint and input `ws://localhost:9944/`
@@ -57,7 +57,7 @@ When consensus is rejected, try clear the data of the chain
 1. purge chain data with `./target/release/node-template purge-chain`.
 2. delete the temp data in base path. 
 
-## Exercise 2: Build a simple proof of existence blockchain
+## Exercise 2: Build a simple Proof of Existence blockchain
 
 Create new file called `poe.rs` under `./node-template/runtime/src`, now let's add some stuff in it.
 
