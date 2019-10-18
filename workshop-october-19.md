@@ -12,6 +12,7 @@ $ curl https://sh.rustup.rs -sSf | sh -s -- -y && \
 	export PATH="$PATH:$HOME/.cargo/bin"
 # Build the node binary
 $ git clone -b v1.0 https://github.com/paritytech/substrate
+$ cd substrate
 $ cargo install --force --path subkey subkey
 $ cd node-template && ./scripts/init.sh && ./scripts/build.sh
 $ cargo build --release
